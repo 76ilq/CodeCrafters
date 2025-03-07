@@ -1,0 +1,21 @@
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    
+    .schedule table, 
+    .schedule table * {
+        visibility: visible;
+    }
+    
+    .schedule table {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    
+    header, footer, nav, .hero, .feedback-form {
+        display: none;
+    }
+}

@@ -1,0 +1,61 @@
+<!--
+Name: Your Name
+ID: Your ID
+Section: Web Development
+Date: 2023-10-01
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Courses - Feedback</title>
+    <link rel="stylesheet" href="../global/main.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Feedback Form Section -->
+    <section class="feedback-form">
+        <h2>Course Feedback</h2>
+        <form>
+            <label for="course">Course:</label>
+            <select id="course" name="course">
+                <option value="html-css">HTML/CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="nodejs">Node.js</option>
+                <option value="django">Python Django</option>
+            </select>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating">
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="5"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Web Courses. All rights reserved.</p>
+    </footer>
+</body>
+</html>
