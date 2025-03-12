@@ -1,15 +1,10 @@
-<!--
-Name: Your Name
-ID: Your ID
-Section: Web Development
-Date: 2023-10-01
--->
+<!-- Name: Portfolio Owner, ID: 12345, Section: Feedback, Date: [Today's Date] -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Courses - Feedback</title>
+    <title>Feedback Form</title>
     <link rel="stylesheet" href="../global/main.css">
 </head>
 <body>
@@ -25,17 +20,15 @@ Date: 2023-10-01
         </nav>
     </header>
 
-    <!-- Feedback Form Section -->
-    <section class="feedback-form">
-        <h2>Course Feedback</h2>
+    <!-- Feedback Form -->
+    <section id="feedback">
+        <h1>Feedback Form</h1>
         <form>
-            <label for="course">Course:</label>
-            <select id="course" name="course">
-                <option value="html-css">HTML/CSS</option>
-                <option value="javascript">JavaScript</option>
-                <option value="nodejs">Node.js</option>
-                <option value="django">Python Django</option>
-            </select>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
             <label for="rating">Rating:</label>
             <select id="rating" name="rating">
@@ -49,13 +42,12 @@ Date: 2023-10-01
             <label for="comments">Comments:</label>
             <textarea id="comments" name="comments" rows="5"></textarea>
 
-            <button type="submit">Submit Feedback</button>
+            <button type="submit">Submit</button>
         </form>
     </section>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2023 Web Courses. All rights reserved.</p>
+        &copy; 2023 Portfolio Owner. All rights reserved.
     </footer>
 </body>
 </html>

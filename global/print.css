@@ -1,21 +1,18 @@
-@media print {
-    body * {
-        visibility: hidden;
-    }
-    
-    .schedule table, 
-    .schedule table * {
-        visibility: visible;
-    }
-    
-    .schedule table {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-    }
-    
-    header, footer, nav, .hero, .feedback-form {
-        display: none;
-    }
+/* Print Styles */
+body * {
+    visibility: hidden;
+}
+
+table, table * {
+    visibility: visible;
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+}
+
+table th, table td {
+    border: 1px solid black;
+    padding: 0.5rem;
 }
