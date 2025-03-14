@@ -1,18 +1,38 @@
-/* Print Styles */
-body * {
+@media print {
+  /* إخفاء كل العناصر غير الجدول */
+  body * {
     visibility: hidden;
-}
+  }
 
-table, table * {
+  #schedule, #schedule * {
     visibility: visible;
-}
+  }
 
-table {
-    border: 1px solid black;
+  #schedule {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-}
+    margin: 0;
+    padding: 0;
+  }
 
-table th, table td {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+  }
+
+  th, td {
     border: 1px solid black;
-    padding: 0.5rem;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
 }

@@ -98,3 +98,43 @@ nav ul li a:hover {
         grid-template-columns: 1fr;
     }
 }
+#schedule {
+    text-align: center;
+    padding: 1rem 1rem;
+    
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 8rem;
+    margin: 0 auto; /* Center table horizontally */
+    border-radius: 2px; /* الزوايا المستديرة للجدول */
+    overflow: hidden; /* مهم جدًا! عشان الزوايا تكون واضحة */
+}
+td {
+    border: 1px solid rgba(255, 140, 0, 0.5);
+    padding: 0.75rem;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold; 
+    color: #bca08e; 
+    background-color: #1d1818; 
+   
+}
+th {
+    border: 1px solid rgba(255, 140, 0, 0.5);
+    padding: 0.75rem;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold; 
+    color: #211804; 
+    font-size: 25px;
+    background-color:rgba(255, 140, 0, 0.5);
+}
+    
+tbody td:hover {
+    background-color:rgba(255, 140, 0, 0.5);
+    transition: background-color 0.9s ease;
+}
+
