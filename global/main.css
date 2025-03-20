@@ -285,3 +285,20 @@ button:hover {
     transform: scale(1.05);
 }
 
+
+.email-link {
+    color: #c8851f; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-link:hover {
+    color: #d9aa64; 
+}
+
+.email-link:visited {
+    color: #6C757D; 
+}
+.email-link:active {
+    color: #d46912; 
+}

@@ -1,23 +1,19 @@
 @media print {
-  /* إخفاء كل العناصر غير الجدول */
+  /* إخفاء جميع العناصر */
   body * {
     visibility: hidden;
   }
 
-  #schedule, #schedule * {
+  /* إظهار الجدول فقط داخل section#schedule */
+  #schedule table, #schedule table * {
     visibility: visible;
   }
 
-  #schedule {
+  /* تحديد مكان الجدول في الصفحة عند الطباعة */
+  #schedule table {
     position: absolute;
-    top: 0;
     left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  table {
+    top: 0;
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
