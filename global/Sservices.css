@@ -36,6 +36,44 @@ nav ul li a {
 nav ul li a:hover {
     color: #ff8c00;
 }
+/*Main page section*/
+/* Hero Section */
+#hero {
+    padding: 100px 20px; /* Add vertical padding for spacing */
+    background-color: #1e1e1e; /* Dark background for hero section */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3); /* Subtle orange glow */
+    max-width: 700px; /* Limit width for better readability */
+    margin: 40px auto; /* Center the section horizontally */
+}
+
+#hero h1 {
+    font-size: 36px;
+    color: #ff8c00; /* Orange heading */
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 18px;
+    color: #bbbbbb; /* Light gray text for paragraph */
+    margin-bottom: 30px;
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+    #hero {
+        padding: 50px 20px; /* Reduce padding on smaller screens */
+    }
+
+    #hero h1 {
+        font-size: 30px; /* Slightly smaller heading on smaller screens */
+    }
+
+    #hero p {
+        font-size: 16px; /* Slightly smaller paragraph text on smaller screens */
+    }
+}
+
 
 /* Services Section */
 #services {
@@ -98,43 +136,152 @@ nav ul li a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/*Schedule page*/
+/* Schedule/Table Section */
 #schedule {
     text-align: center;
-    padding: 1rem 1rem;
-    
+    padding: 40px 20px; /* Consistent padding with other sections */
+    background-color: #1e1e1e; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3); /* Subtle orange glow */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 40px auto; /* Center the section horizontally */
 }
 
 table {
-    width: 80%;
+    width: 100%; /* Full width within the container */
     border-collapse: collapse;
-    margin-top: 8rem;
-    margin: 0 auto; /* Center table horizontally */
-    border-radius: 2px; /* الزوايا المستديرة للجدول */
-    overflow: hidden; /* مهم جدًا! عشان الزوايا تكون واضحة */
+    margin: 20px auto; /* Add spacing above and below the table */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners are visible */
 }
-td {
-    border: 1px solid rgba(255, 140, 0, 0.5);
-    padding: 0.75rem;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-weight: bold; 
-    color: #bca08e; 
-    background-color: #1d1818; 
-   
-}
+
 th {
-    border: 1px solid rgba(255, 140, 0, 0.5);
-    padding: 0.75rem;
+    background-color: #ff8c00; /* Orange background for headers */
+    color: #1e1e1e; /* Dark text for contrast */
+    font-size: 18px; /* Slightly smaller font size */
+    font-weight: bold;
+    padding: 10px; /* Consistent padding */
     text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-weight: bold; 
-    color: #211804; 
-    font-size: 25px;
-    background-color:rgba(255, 140, 0, 0.5);
+    border: 1px solid #ff8c00; /* Orange border */
 }
-    
+
+td {
+    background-color: #222; /* Dark background for cells */
+    color: #ffffff; /* White text for visibility */
+    font-size: 16px; /* Smaller font size for data */
+    padding: 10px; /* Consistent padding */
+    text-align: center;
+    border: 1px solid #ff8c00; /* Orange border */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
 tbody td:hover {
-    background-color:rgba(255, 140, 0, 0.5);
-    transition: background-color 0.9s ease;
+    background-color: #ff8c00; /* Highlight row on hover */
+    color: #1e1e1e; /* Dark text for contrast */
+    transition: background-color 0.3s ease;
+}
+
+/* Feedback Page */
+#feedback {
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
+}
+
+#feedback h1 {
+    font-size: 28px;
+    color: #ff8c00;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 18px;
+    color: #ff8c00; /* Default label color */
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Style for checkbox and radio button labels */
+.checkbox-group label,
+.radio-group label {
+    color: #ffffff; /* White font for service names and rating options */
+    font-size: 16px; /* Slightly smaller font size for readability */
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 10px;
+    background-color: #222;
+    border: 1px solid #ff8c00;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Arrange services checkboxes into two columns */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px; /* Space between rows and columns */
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center; /* Align checkbox and label text */
+    gap: 10px; /* Space between checkbox and label */
+}
+
+/* Arrange radio buttons in a horizontal line */
+.radio-group {
+    display: flex;
+    justify-content: center; /* Center radio buttons horizontally */
+    gap: 15px; /* Space between radio buttons */
+    align-items: center; /* Ensure vertical alignment */
+}
+
+.radio-group input[type="radio"] {
+    accent-color: #ff8c00; /* Custom color for radio buttons */
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #ff8c00;
+    border: none;
+    color: #1e1e1e;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e07b00;
+    transform: scale(1.05);
 }
 
