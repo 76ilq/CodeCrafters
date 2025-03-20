@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
     <link rel="stylesheet" href="../global/main.css">
+
 </head>
 <body>
     <!-- Header Section -->
@@ -21,31 +22,64 @@
         </nav>
     </header>
 
-    <!-- Feedback Form -->
-    <section id="feedback">
-        <h1>Feedback Form</h1>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <!-- Feedback Form Section -->
+<section id="feedback">
+    <h1>Feedback Form</h1>
+    <p>Your feedback helps us improve our services. Please take a moment to share your experience.</p>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <form action="submit_feedback.php" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-            <label for="rating">Rating:</label>
-            <select id="rating" name="rating">
-                <option value="5">5 Stars</option>
-                <option value="4">4 Stars</option>
-                <option value="3">3 Stars</option>
-                <option value="2">2 Stars</option>
-                <option value="1">1 Star</option>
-            </select>
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments" rows="5"></textarea>
+        <!-- Services Used (Checkboxes) -->
+        <label for="services">Select the services you used:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" id="personal" name="services[]" value="Personal Website"> Personal Website</label>
+            <label><input type="checkbox" id="ecommerce" name="services[]" value="E-Commerce Website"> E-Commerce Website</label>
+            <label><input type="checkbox" id="api" name="services[]" value="RESTful API Development"> RESTful API Development</label>
+            <label><input type="checkbox" id="admin" name="services[]" value="Admin Panel Dashboard"> Admin Panel Dashboard</label>
+            <label><input type="checkbox" id="dashboard_ui" name="services[]" value="Dashboard UI Design"> Dashboard UI Design</label>
+            <label><input type="checkbox" id="landing" name="services[]" value="Landing Page Design"> Landing Page Design</label>
+            <label><input type="checkbox" id="android" name="services[]" value="Android App (Flutter)"> Android App (Flutter)</label>
+            <label><input type="checkbox" id="speed" name="services[]" value="Website Speed Optimization"> Website Speed Optimization</label>
+            <label><input type="checkbox" id="seo" name="services[]" value="On-Page SEO"> On-Page SEO</label>
+            <label><input type="checkbox" id="maintenance" name="services[]" value="Monthly Website Maintenance"> Monthly Website Maintenance</label>
+            <label><input type="checkbox" id="migration" name="services[]" value="Website Migration"> Website Migration</label>
+            <label><input type="checkbox" id="advice" name="services[]" value="One-on-one technical advice"> One-on-one technical advice</label>
+        </div>
 
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+        <!-- Service Rating (Radio Buttons) -->
+        <label for="rating">How would you rate our services?</label>
+        <div class="radio-group">
+            <label><input type="radio" id="good" name="rating" value="Good"> Good</label>
+            <label><input type="radio" id="average" name="rating" value="Average"> Average</label>
+            <label><input type="radio" id="poor" name="rating" value="Poor"> Poor</label>
+        </div>
+
+        <!-- User Preferences (Dropdown Menu) -->
+        <label for="preference">What aspect of our service do you value the most?</label>
+        <select id="preference" name="preference">
+            <option value="Speed">Speed</option>
+            <option value="Quality">Quality</option>
+            <option value="Support">Customer Support</option>
+            <option value="Pricing">Affordable Pricing</option>
+        </select>
+
+        <!-- Additional Comments (Textarea) -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section> 
+    
+        
 
     <footer>
         &copy; 2023 Portfolio Owner. All rights reserved.
