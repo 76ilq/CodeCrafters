@@ -16,7 +16,7 @@ footer {
     background-color: #1a1a1a;
     color: #ffffff;
     text-align: center;
-    padding: 15px 0;
+    padding: 8px 0;
     font-size: 14px;
 }
 
@@ -115,6 +115,7 @@ nav ul li a:hover {
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 /* Individual Card */
@@ -152,6 +153,21 @@ nav ul li a:hover {
     .cards {
         grid-template-columns: 1fr;
     }
+}
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff8c00;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #e07b00;
+    transform: scale(1.05);
 }
 
 /*Schedule page*/
@@ -302,20 +318,3 @@ button:hover {
     transform: scale(1.05);
 }
 
-
-.email-link {
-    color: #c8851f; 
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.email-link:hover {
-    color: #d9aa64; 
-}
-
-.email-link:visited {
-    color: #6C757D; 
-}
-.email-link:active {
-    color: #d46912; 
-}
