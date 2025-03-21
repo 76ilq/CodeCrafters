@@ -1,51 +1,67 @@
-<!-- Name: Portfolio Owner, ID: 12345, Section: Homepage, Date: [Today's Date] -->
+<!-- 
+  Name: Portfolio Owner, ID: 12345, Section: Homepage, Date: [Today's Date]
+  This file contains the HTML structure for the Home page. It includes a header, hero section, and footer.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Home</title>
-
-    <!-- ✅ ربط ملف الـ CSS الصحيح -->
-    <link rel="stylesheet" href="global/main.css" />
+    <!-- 
+      The <head> section contains metadata and links to external resources like CSS files.
+      Metadata ensures proper rendering and functionality of the webpage.
+    -->
+    <meta charset="UTF-8" /> <!-- Ensures proper rendering of special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Makes the page responsive on all devices -->
+    <title>Portfolio - Home</title> <!-- Sets the title of the webpage displayed in the browser tab -->
+    <link rel="stylesheet" href="global/main.css" /> <!-- Links to the global CSS file for styling the page -->
 </head>
 
 <body>
-   
-        
     <!-- Header Section -->
     <header>
+        <!-- 
+          The <header> section contains the navigation bar with links to other pages.
+          It helps users navigate the website.
+        -->
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <!-- ✅ انت على نفس المستوى -->
-                <li><a href="pages/services.html">Services</a></li>
-                <li><a href="pages/about.html">about</a></li>
-                <li><a href="pages/schedule.html">Pricing</a></li>
-                <li><a href="pages/feedback.html">Feedback</a></li>
+                <!-- Navigation Links -->
+                <li><a href="index.html">Home</a></li> <!-- Link to the Home page (current page) -->
+                <li><a href="pages/services.html">Services</a></li> <!-- Link to the Services page -->
+                <li><a href="pages/about.html">About</a></li> <!-- Link to the About page -->
+                <li><a href="pages/schedule.html">Pricing</a></li> <!-- Link to the Pricing page -->
+                <li><a href="pages/feedback.html">Feedback</a></li> <!-- Link to the Feedback page -->
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
-        <h1>Welcome to My Portfolio</h1>
+        <!-- 
+          The <section> with id="hero" serves as the main introduction to the portfolio.
+          It typically includes a welcoming message and a brief description of the portfolio owner's expertise.
+        -->
+        <h1>Welcome to My Portfolio</h1> <!-- Main heading of the homepage -->
         <p>
             I am a passionate programmer specializing in web development, software
             design, and problem-solving.
-        </p>
+        </p> <!-- Brief description of the portfolio owner's skills and expertise -->
     </section>
 
+    <!-- Footer Section -->
     <footer>
-    <div class="footer-content">
-        <p>&copy; 2023 Portfolio Owner. All rights reserved.</p>
-        <p>Contact me: 
-            <a href="mailto:info@example.com">info@example.com</a> | 
-            <a href="tel:+1234567890">+1 (234) 567-890</a>
-        </p>
-    </div>
-</footer>
+        <!-- 
+          The <footer> section contains copyright information and contact details.
+          It provides legal and contact information for the website owner.
+        -->
+        <div class="footer-content">
+            <p>&copy; 2023 Portfolio Owner. All rights reserved.</p> <!-- Copyright notice -->
+            <p>Contact me: 
+                <a href="mailto:info@example.com">info@example.com</a> | <!-- Email link for inquiries -->
+                <a href="tel:+1234567890">+1 (234) 567-890</a> <!-- Phone link for direct contact -->
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
