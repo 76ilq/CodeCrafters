@@ -1,158 +1,181 @@
-<!-- Name: Portfolio Owner, ID: 12345, Section: Schedule, Date: [Today's Date] -->
+<!-- 
+  Name: Portfolio Owner, ID: 12345, Section: Schedule, Date: [Today's Date]
+  This file contains the HTML structure for a Pricing page. It includes a header, schedule section with a pricing table, contact information, and footer.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing</title>
-    <link rel="stylesheet" href="../global/main.css">
-    <link rel="stylesheet" href="../global\print.css" media="print">
-
-
+    <!-- 
+      The <head> section contains metadata and links to external resources like CSS files.
+      Metadata ensures proper rendering and functionality of the webpage.
+    -->
+    <meta charset="UTF-8"> <!-- Ensures proper rendering of special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on all devices -->
+    <title>Pricing</title> <!-- Sets the title of the webpage displayed in the browser tab -->
+    <link rel="stylesheet" href="../global/main.css"> <!-- Links to the global CSS file for styling the page -->
+    <link rel="stylesheet" href="../global\print.css" media="print"> <!-- Links to a print-specific CSS file for printing -->
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
+        <!-- 
+          The <header> section contains the navigation bar with links to other pages.
+          It helps users navigate the website.
+        -->
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="schedule.html">Pricing</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
+                <!-- Navigation Links -->
+                <li><a href="../index.html">Home</a></li> <!-- Link to the Home page -->
+                <li><a href="services.html">Services</a></li> <!-- Link to the Services page -->
+                <li><a href="about.html">About</a></li> <!-- Link to the About page -->
+                <li><a href="schedule.html">Pricing</a></li> <!-- Link to the Pricing page (current page) -->
+                <li><a href="feedback.html">Feedback</a></li> <!-- Link to the Feedback page -->
             </ul>
         </nav>
     </header>
 
-       <!-- Schedule Section -->
-      
-      
-
-        <section id="schedule">
-                    <h1>Programming Services & Pricing</h1>
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <!-- 
+          The <section> with id="schedule" displays the pricing details for various services offered by the portfolio owner.
+          It uses a table to organize service categories, descriptions, durations, prices, and notes.
+        -->
+        <h1>Programming Services & Pricing</h1> <!-- Title of the pricing section -->
+        
+        <!-- Pricing Table -->
         <table>
+            <!-- Table Head -->
             <thead>
                 <tr>
-                    <th>Main Service Category</th>
-                    <th>Service</th>
-                    <th>Duration</th>
-                    <th>Price</th>
-                    <th>Notes</th>
+                    <th>Main Service Category</th> <!-- Header for the main service categories column -->
+                    <th>Service</th> <!-- Header for the specific services column -->
+                    <th>Duration</th> <!-- Header for the service duration column -->
+                    <th>Price</th> <!-- Header for the service price column -->
+                    <th>Notes</th> <!-- Header for additional notes about the service -->
                 </tr>
             </thead>
+            <!-- Table Body -->
             <tbody>
+                <!-- Web Development Services -->
                 <tr>
-                    <td rowspan="2">Web Development</td>
-                    <td>Personal Website</td>
-                    <td>5 days</td>
-                    <td>$500</td>
-                    <td>Responsive + Basic SEO</td>
+                    <td rowspan="2">Web Development</td> <!-- Main category spanning two rows -->
+                    <td>Personal Website</td> <!-- Specific service -->
+                    <td>5 days</td> <!-- Duration -->
+                    <td>$500</td> <!-- Price -->
+                    <td>Responsive + Basic SEO</td> <!-- Notes -->
                 </tr>
                 <tr>
-                    <td>E-Commerce Website</td>
-                    <td>10 days</td>
-                    <td>$1200</td>
-                    <td>Payment gateway setup included</td>
+                    <td>E-Commerce Website</td> <!-- Specific service -->
+                    <td>10 days</td> <!-- Duration -->
+                    <td>$1200</td> <!-- Price -->
+                    <td>Payment gateway setup included</td> <!-- Notes -->
                 </tr>
-        
+
+                <!-- Back-End Development Services -->
                 <tr>
-                    <td rowspan="2">Back-End Development</td>
-                    <td>RESTful API Development</td>
-                    <td>7 days</td>
-                    <td>$800</td>
-                    <td>Fully documented API</td>
-                </tr>
-                <tr>
-                    <td>Admin Panel Dashboard</td>
-                    <td>14 days</td>
-                    <td>$2000</td>
-                    <td>User management + role control</td>
-                </tr>
-        
-                <tr>
-                    <td rowspan="2">UI/UX Design</td>
-                    <td>Dashboard UI Design</td>
-                    <td>5 days</td>
-                    <td>$400</td>
-                    <td>Figma design + Prototypes</td>
+                    <td rowspan="2">Back-End Development</td> <!-- Main category spanning two rows -->
+                    <td>RESTful API Development</td> <!-- Specific service -->
+                    <td>7 days</td> <!-- Duration -->
+                    <td>$800</td> <!-- Price -->
+                    <td>Fully documented API</td> <!-- Notes -->
                 </tr>
                 <tr>
-                    <td>Landing Page Design</td>
-                    <td>3 days</td>
-                    <td>$250</td>
-                    <td>Conversion optimized design</td>
+                    <td>Admin Panel Dashboard</td> <!-- Specific service -->
+                    <td>14 days</td> <!-- Duration -->
+                    <td>$2000</td> <!-- Price -->
+                    <td>User management + role control</td> <!-- Notes -->
                 </tr>
-        
+
+                <!-- UI/UX Design Services -->
                 <tr>
-                    <td>Mobile Apps</td>
-                    <td>Android App (Flutter)</td>
-                    <td>15 days</td>
-                    <td>$1500</td>
-                    <td>Google Play submission included</td>
-                </tr>
-        
-                <tr>
-                    <td rowspan="2">SEO & Performance</td>
-                    <td>Website Speed Optimization</td>
-                    <td>3 days</td>
-                    <td>$300</td>
-                    <td>Google PageSpeed improvements</td>
+                    <td rowspan="2">UI/UX Design</td> <!-- Main category spanning two rows -->
+                    <td>Dashboard UI Design</td> <!-- Specific service -->
+                    <td>5 days</td> <!-- Duration -->
+                    <td>$400</td> <!-- Price -->
+                    <td>Figma design + Prototypes</td> <!-- Notes -->
                 </tr>
                 <tr>
-                    <td>On-Page SEO</td>
-                    <td>5 days</td>
-                    <td>$400</td>
-                    <td>Keywords + internal structure</td>
+                    <td>Landing Page Design</td> <!-- Specific service -->
+                    <td>3 days</td> <!-- Duration -->
+                    <td>$250</td> <!-- Price -->
+                    <td>Conversion optimized design</td> <!-- Notes -->
                 </tr>
-        
+
+                <!-- Mobile App Development -->
                 <tr>
-                    <td rowspan="2">Maintenance & Support</td>
-                    <td>Monthly Website Maintenance</td>
-                    <td>Monthly</td>
-                    <td>$250</td>
-                    <td>Backups + CMS updates + Security</td>
+                    <td>Mobile Apps</td> <!-- Main category -->
+                    <td>Android App (Flutter)</td> <!-- Specific service -->
+                    <td>15 days</td> <!-- Duration -->
+                    <td>$1500</td> <!-- Price -->
+                    <td>Google Play submission included</td> <!-- Notes -->
+                </tr>
+
+                <!-- SEO & Performance Services -->
+                <tr>
+                    <td rowspan="2">SEO & Performance</td> <!-- Main category spanning two rows -->
+                    <td>Website Speed Optimization</td> <!-- Specific service -->
+                    <td>3 days</td> <!-- Duration -->
+                    <td>$300</td> <!-- Price -->
+                    <td>Google PageSpeed improvements</td> <!-- Notes -->
                 </tr>
                 <tr>
-                    <td>Website Migration</td>
-                    <td>2 days</td>
-                    <td>$200</td>
-                    <td>No downtime guaranteed</td>
+                    <td>On-Page SEO</td> <!-- Specific service -->
+                    <td>5 days</td> <!-- Duration -->
+                    <td>$400</td> <!-- Price -->
+                    <td>Keywords + internal structure</td> <!-- Notes -->
                 </tr>
-        
+
+                <!-- Maintenance & Support Services -->
                 <tr>
-                    <td>Technical Consultation</td>
-                    <td>One-on-one technical advice for projects.</td>
-                    <td>1 Hour</td>
-                    <td>$200</td>
-                    <td>Includes follow-up report with recommendations</td>
+                    <td rowspan="2">Maintenance & Support</td> <!-- Main category spanning two rows -->
+                    <td>Monthly Website Maintenance</td> <!-- Specific service -->
+                    <td>Monthly</td> <!-- Duration -->
+                    <td>$250</td> <!-- Price -->
+                    <td>Backups + CMS updates + Security</td> <!-- Notes -->
                 </tr>
-        
+                <tr>
+                    <td>Website Migration</td> <!-- Specific service -->
+                    <td>2 days</td> <!-- Duration -->
+                    <td>$200</td> <!-- Price -->
+                    <td>No downtime guaranteed</td> <!-- Notes -->
+                </tr>
+
+                <!-- Technical Consultation -->
+                <tr>
+                    <td>Technical Consultation</td> <!-- Main category -->
+                    <td>One-on-one technical advice for projects.</td> <!-- Specific service -->
+                    <td>1 Hour</td> <!-- Duration -->
+                    <td>$200</td> <!-- Price -->
+                    <td>Includes follow-up report with recommendations</td> <!-- Notes -->
+                </tr>
+
                 <!-- Special Offer Row -->
                 <tr>
-                    <td colspan="5" >
+                    <td colspan="5">
                         🎉 Special Offer: 10% discount for the first two clients who order at the beginning of every month!
-                    </td>
+                    </td> <!-- A special offer message spanning all columns -->
                 </tr>
-               
             </tbody>
-          
         </table>
-        <div >
-            <h4> 📧 For inquiries about any service, please contact us at:
-             <strong><a href="mailto:info@example.com" class="email-link">info@example.com</h4></a></strong>
-         </div>
+
+        <!-- Contact Information -->
+        <div class="contact">
+            <address>
+                📧 For inquiries about any service, please contact us at: 
+                <a href="mailto:info@example.com">info@example.com</a> <!-- Email link for inquiries -->
+            </address>
+        </div>
     </section>
-    
-  
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2023 Portfolio Owner. All rights reserved.</p>
-        <p>Contact me: 
-            <a href="mailto:info@example.com">info@example.com</a> | 
-            <a href="tel:+1234567890">+1 (234) 567-890</a>
-        </p>
-    </div>
-</footer>
-    
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- 
+          The <footer> section contains copyright information and contact details.
+          It provides legal and contact information for the website owner.
+        -->
+        <p>&copy; 2023 Portfolio Owner. All rights reserved.</p> <!-- Copyright notice -->
+    </footer>
 </body>
 </html>
