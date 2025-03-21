@@ -1,102 +1,139 @@
-<!-- Name: Portfolio Owner, ID: 12345, Section: Services, Date: [Today's Date] -->
+<!-- 
+  Name: Portfolio Owner, ID: 12345, Section: Services, Date: [Today's Date]
+  This file contains the HTML structure for a Services page. It includes a header, services section, explore more section, and footer.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Services</title>
-    <link rel="stylesheet" href="../global/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <!-- 
+      The <head> section contains metadata and links to external resources like CSS files and scripts.
+      Metadata ensures proper rendering and functionality of the webpage.
+    -->
+    <meta charset="UTF-8"> <!-- Ensures proper rendering of special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on all devices -->
+    <title>My Services</title> <!-- Sets the title of the webpage displayed in the browser tab -->
+    <link rel="stylesheet" href="../global/main.css"> <!-- Links to the global CSS file for styling the page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script> <!-- Includes Font Awesome icons for visual elements -->
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
+        <!-- 
+          The <header> section contains the navigation bar with links to other pages.
+          It helps users navigate the website.
+        -->
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="schedule.html">Pricing</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
+                <!-- Navigation Links -->
+                <li><a href="../index.html">Home</a></li> <!-- Link to the Home page -->
+                <li><a href="services.html">Services</a></li> <!-- Link to the Services page (current page) -->
+                <li><a href="about.html">About</a></li> <!-- Link to the About page -->
+                <li><a href="schedule.html">Pricing</a></li> <!-- Link to the Pricing page -->
+                <li><a href="feedback.html">Feedback</a></li> <!-- Link to the Feedback page -->
             </ul>
         </nav>
     </header>
 
     <!-- Services Section -->
     <section id="services">
-        <h1>Services</h1>
-        <p>Creating intuitive and user-friendly designs through UX research</p>
-        
+        <!-- 
+          The <section> with id="services" showcases the services offered by the portfolio owner.
+          It uses cards to display individual services with icons, titles, and descriptions.
+        -->
+        <h1>Services</h1> <!-- Title of the services section -->
+        <p>Creating intuitive and user-friendly designs through UX research</p> <!-- Brief description of the services -->
+
+        <!-- Cards Container -->
         <div class="cards">
+            <!-- 
+              Each card represents a specific service with an icon, title, and description.
+              Icons are from Font Awesome, and descriptions provide details about the service.
+            -->
             <div class="card">
-                <i class="fas fa-paint-brush"></i>
-                <h2>UI/UX Design</h2>
-                <p>Refers to the process of creating user-friendly and visually appealing digital experiences.</p>
+                <i class="fas fa-paint-brush"></i> <!-- Icon representing UI/UX Design -->
+                <h2>UI/UX Design</h2> <!-- Title of the service -->
+                <p>Refers to the process of creating user-friendly and visually appealing digital experiences.</p> <!-- Description of the service -->
             </div>
             <div class="card">
-                <i class="fas fa-desktop"></i>
-                <h2>Website Design</h2>
-                <p>The process of creating the visual layout, structure, and functionality of a website.</p>
+                <i class="fas fa-desktop"></i> <!-- Icon representing Website Design -->
+                <h2>Website Design</h2> <!-- Title of the service -->
+                <p>The process of creating the visual layout, structure, and functionality of a website.</p> <!-- Description of the service -->
             </div>
             <div class="card">
-                <i class="fas fa-mobile-alt"></i>
-                <h2>App Design</h2>
-                <p>Refers to the process of designing the visual and functional aspects of an application.</p>
+                <i class="fas fa-mobile-alt"></i> <!-- Icon representing App Design -->
+                <h2>App Design</h2> <!-- Title of the service -->
+                <p>Refers to the process of designing the visual and functional aspects of an application.</p> <!-- Description of the service -->
             </div>
             <div class="card">
-                <i class="fas fa-chart-line"></i>
-                <h2>Dashboard Design</h2>
-                <p>Creating an intuitive and visually appealing interface that displays key data insights.</p>
+                <i class="fas fa-chart-line"></i> <!-- Icon representing Dashboard Design -->
+                <h2>Dashboard Design</h2> <!-- Title of the service -->
+                <p>Creating an intuitive and visually appealing interface that displays key data insights.</p> <!-- Description of the service -->
             </div>
             <div class="card">
-                <i class="fas fa-code"></i>
-                <h2>Web App Design</h2>
-                <p>Designing user-friendly and visually appealing interfaces for web-based applications.</p>
+                <i class="fas fa-code"></i> <!-- Icon representing Web App Design -->
+                <h2>Web App Design</h2> <!-- Title of the service -->
+                <p>Designing user-friendly and visually appealing interfaces for web-based applications.</p> <!-- Description of the service -->
             </div>
             <div class="card">
-                <i class="fas fa-palette"></i>
-                <h2>Graphic Design</h2>
-                <p>The art of visually communicating ideas used in branding, advertising, and digital media.</p>
+                <i class="fas fa-palette"></i> <!-- Icon representing Graphic Design -->
+                <h2>Graphic Design</h2> <!-- Title of the service -->
+                <p>The art of visually communicating ideas used in branding, advertising, and digital media.</p> <!-- Description of the service -->
             </div>
         </div>
     </section>
-     <!-- Explore More Section -->
-<section id="explore-more">
-    <h1>Explore More</h1>
-    <p>Interested in learning more? Check out these sections:</p>
-    <div class="cards">
-        <div class="card">
-            <i class="fas fa-dollar-sign"></i>
-            <h2>Pricing</h2>
-            <p>View detailed pricing for all services offered.</p>
-            <a href="../pages/schedule.html" class="button">View Pricing</a>
-        </div>
-        <div class="card">
-            <i class="fas fa-comment-dots"></i>
-            <h2>Feedback</h2>
-            <p>Share your thoughts and help us improve our services.</p>
-            <a href="../pages/feedback.html" class="button">Provide Feedback</a>
-        </div>
-        <div class="card">
-            <i class="fas fa-user-circle"></i>
-            <h2>About Me</h2>
-            <p>Learn more about my journey as a programmer and designer.</p>
-            <a href="../pages/about.html" class="button">Learn More About Me</a>
-        </div>
-    </div>
-</section>
 
+    <!-- Explore More Section -->
+    <section id="explore-more">
+        <!-- 
+          The <section> with id="explore-more" encourages users to explore additional sections of the website.
+          It uses cards with links to related pages.
+        -->
+        <h1>Explore More</h1> <!-- Title of the explore more section -->
+        <p>Interested in learning more? Check out these sections:</p> <!-- Brief description of the section -->
+
+        <!-- Cards Container -->
+        <div class="cards">
+            <!-- 
+              Each card provides information about a related section of the website with a link to that page.
+              Icons, titles, and descriptions guide users to relevant content.
+            -->
+            <div class="card">
+                <i class="fas fa-dollar-sign"></i> <!-- Icon representing Pricing -->
+                <h2>Pricing</h2> <!-- Title of the section -->
+                <p>View detailed pricing for all services offered.</p> <!-- Description of the section -->
+                <a href="../pages/schedule.html" class="button">View Pricing</a> <!-- Button linking to the Pricing page -->
+            </div>
+            <div class="card">
+                <i class="fas fa-comment-dots"></i> <!-- Icon representing Feedback -->
+                <h2>Feedback</h2> <!-- Title of the section -->
+                <p>Share your thoughts and help us improve our services.</p> <!-- Description of the section -->
+                <a href="../pages/feedback.html" class="button">Provide Feedback</a> <!-- Button linking to the Feedback page -->
+            </div>
+            <div class="card">
+                <i class="fas fa-user-circle"></i> <!-- Icon representing About Me -->
+                <h2>About Me</h2> <!-- Title of the section -->
+                <p>Learn more about my journey as a programmer and designer.</p> <!-- Description of the section -->
+                <a href="../pages/about.html" class="button">Learn More About Me</a> <!-- Button linking to the About page -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-    <div class="footer-content">
-        <p>&copy; 2023 Portfolio Owner. All rights reserved.</p>
-        <p>Contact me: 
-            <a href="mailto:info@example.com">info@example.com</a> | 
-            <a href="tel:+1234567890">+1 (234) 567-890</a>
-        </p>
-    </div>
-</footer>
+        <!-- 
+          The <footer> section contains copyright information and contact details.
+          It provides legal and contact information for the website owner.
+        -->
+        <div class="footer-content">
+            <p>&copy; 2023 Portfolio Owner. All rights reserved.</p> <!-- Copyright notice -->
+            <p>Contact me: 
+                <a href="mailto:info@example.com">info@example.com</a> | <!-- Email link -->
+                <a href="tel:+1234567890">+1 (234) 567-890</a> <!-- Phone link -->
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
