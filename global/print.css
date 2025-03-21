@@ -1,31 +1,9 @@
 @media print {
-<<<<<<< HEAD
-  /* إخفاء جميع العناصر */
-=======
   /* Hide everything by default */
->>>>>>> ecf75caed5dfc266a1d87c06c41c171dd91c6246
   body * {
       visibility: hidden;
   }
 
-<<<<<<< HEAD
-  /* إظهار الجدول فقط داخل section#schedule */
-  #schedule table, #schedule table * {
-    visibility: visible;
-  }
-
-  /* تحديد مكان الجدول في الصفحة عند الطباعة */
-  #schedule table {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: black;
-    background-color: white;
-=======
   /* Show only the #schedule section and its children */
   #schedule, #schedule * {
       visibility: visible;
@@ -41,19 +19,23 @@
       padding: 0;
   }
 
+  /* Remove all shadows from the entire page */
+  * {
+      box-shadow: none !important; /* Remove all shadows */
+  }
+
   /* Table-specific styles */
   table {
       width: 100%;
       border-collapse: collapse;
       font-family: Arial, sans-serif;
       font-size: 14px;
-      color: black;
       background-color: white;
->>>>>>> ecf75caed5dfc266a1d87c06c41c171dd91c6246
   }
 
+  /* Remove borders for printing */
   th, td {
-      border: 1px solid black;
+      border: none; /* Remove borders */
       padding: 8px;
       text-align: left;
   }
@@ -70,5 +52,10 @@
   /* Ensure no additional elements (like headers or footers) appear */
   header, footer, nav, .contact {
       display: none !important;
+  }
+
+  /* Hide the "Programming Services & Pricing" heading */
+  #schedule h1 {
+      display: none;
   }
 }
