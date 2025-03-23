@@ -73,7 +73,7 @@ footer a:hover {
     color: #ffffff; /* White on hover */
 }
 
-
+/*--------------------------------------------------------------------------------------------------------------------*/
 /* Services page */
 #services {
     padding: 40px 20px;
@@ -151,7 +151,7 @@ footer a:hover {
     background-color: #e07b00;
     transform: scale(1.05);
 }
-
+/*--------------------------------------------------------------------------------------------------------------------*/
 /*Schedule page*/
 #schedule {
     text-align: center;
@@ -283,22 +283,6 @@ input[type="radio"] {
     height: 20px;
 }
 
-button {
-    padding: 12px 20px;
-    background-color: #ff8c00;
-    border: none;
-    color: #1e1e1e;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: #e07b00;
-    transform: scale(1.05);
-}
 
 /* Hero Section Styling */
 /* Hero Section */
