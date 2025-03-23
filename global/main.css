@@ -396,3 +396,13 @@ input[type="radio"] {
     border-radius:90%; 
     border: 4px solid #ff9f43;
 }
+/* email color*/
+.contact a {
+    color: orange;
+    text-decoration: none; 
+}
+
+.contact a:hover,
+.contact a:focus {
+    color: white;
+}
