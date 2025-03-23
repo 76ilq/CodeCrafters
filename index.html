@@ -1,6 +1,6 @@
 <!-- 
   Name: Portfolio Owner, ID: 12345, Section: Homepage, Date: [Today's Date]
-  This file contains the HTML structure for the Home page. It includes a header, hero section, and footer.
+  This file contains the HTML structure for the Home page. It includes a header, hero section, stats section, team section, and footer.
 -->
 
 <!DOCTYPE html>
@@ -36,62 +36,73 @@
     </header>
 
     <!-- Hero Section -->
-<section id="hero">
-  <div class="logo-container">
-    <img src="images1/team-logo.png" alt="Team Logo" class="logo">
-    <h1 class="tagline">Welcome to <br><span class="highlight">WebCrafters</span></h1>
-  </div>
-  <p class="description"><br>We are a startup company specializing in web design <br> and digital solutions development.</p>
+    <section id="hero">
+        <!-- 
+          The <section> with id="hero" serves as the main introduction to the portfolio.
+          It typically includes a welcoming message, logo, description, and call-to-action buttons.
+        -->
+        <div class="logo-container">
+            <img src="images1/team-logo.png" alt="Team Logo" class="logo"> <!-- Displays the company logo -->
+            <h1 class="tagline">Welcome to <br><span class="highlight">WebCrafters</span></h1> <!-- Main heading with highlighted text -->
+        </div>
+        <p class="description"><br>We are a startup company specializing in web design <br> and digital solutions development.</p> <!-- Brief description of the company -->
 
-  <!-- Buttons Section -->
-<div class="buttons">
-  <!-- Let's Connect Button -->
-  <a href="pages/services.html" class="connect-btn">Our services</a>
+        <!-- Buttons Section -->
+        <div class="buttons">
+            <!-- Let's Connect Button -->
+            <a href="pages/services.html" class="connect-btn">Our services</a> <!-- Button linking to the Services page -->
+        </div>
 
-</div>
+        <!-- Stats Section -->
+        <div class="stats">
+            <!-- 
+              The <div> with class="stats" showcases key statistics about the company.
+              Each stat highlights achievements or milestones.
+            -->
+            <div class="stat">
+                <span class="number">5+</span> <!-- Number of years of experience -->
+                <span class="label">Years of Experience</span> <!-- Label for the statistic -->
+            </div>
+            <div class="stat">
+                <span class="number">100+</span> <!-- Number of projects completed -->
+                <span class="label">Projects Completed</span> <!-- Label for the statistic -->
+            </div>
+            <div class="stat">
+                <span class="number">470+</span> <!-- Number of happy clients -->
+                <span class="label">Happy Clients</span> <!-- Label for the statistic -->
+            </div>
+        </div>
+    </section>
 
-  <!-- Stats Section -->
-  <div class="stats">
-    <div class="stat">
-      <span class="number">5+</span>
-      <span class="label">Years of Experience</span>
-    </div>
-    <div class="stat">
-      <span class="number">100+</span>
-      <span class="label">Projects Completed</span>
-    </div>
-    <div class="stat">
-      <span class="number">470+</span>
-      <span class="label">Happy Clients</span>
-    </div>
-  </div>
+    <!-- Team Section -->
+    <section class="team-section">
+        <!-- 
+          The <section> with class="team-section" introduces the team members behind the company.
+          It includes images, names, and roles of team members.
+        -->
+        <h2>Our Team</h2> <!-- Title of the team section -->
+        <div class="team-members">
+            <!-- First Team Member -->
+            <div class="member">
+                <img src="images1/member1.png" alt="Member 1" class="member-image"> <!-- Image of the first team member -->
+                <h3>John Doe</h3> <!-- Name of the first team member -->
+                <p>Web Designer</p> <!-- Role of the first team member -->
+            </div>
+            <!-- Second Team Member -->
+            <div class="member">
+                <img src="images1/member2.png" alt="Member 2" class="member-image"> <!-- Image of the second team member -->
+                <h3>Jana Smith</h3> <!-- Name of the second team member -->
+                <p>Front-End Developer</p> <!-- Role of the second team member -->
+            </div>
+            <!-- Third Team Member -->
+            <div class="member">
+                <img src="images1/member3.png" alt="Member 3" class="member-image"> <!-- Image of the third team member -->
+                <h3>Alex Johnson</h3> <!-- Name of the third team member -->
+                <p>Back-End Developer</p> <!-- Role of the third team member -->
+            </div>
+        </div>
+    </section>
 
-  <!-- Team Section -->
-  <section class="team-section">
-    <h2>Our Team</h2>
-    <div class="team-members">
-      <div class="member">
-        <img src="images1/member1.png" alt="Member 1" class="member-image">
-        <h3>John Doe</h3>
-        <p>Web Designer</p>
-      </div>
-      <div class="member">
-        <img src="images1/member2.png" alt="Member 2" class="member-image">
-        <h3>Jana Smith</h3>
-        <p>Front-End Developer</p>
-      </div>
-      <div class="member">
-        <img src="images1/member3.png" alt="Member 3" class="member-image">
-        <h3>Alex Johnson</h3>
-        <p>Back-End Developer</p>
-      </div>
-    </div>
-  </section>
-</section>
-
-
-
-    
     <!-- Footer Section -->
     <footer>
         <!-- 
@@ -106,9 +117,6 @@
             </p>
         </div>
     </footer>
-
-   
-
 </body>
 
 </html>
