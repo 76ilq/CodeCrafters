@@ -23,8 +23,6 @@ This project was developed as part of the **CPCS403** course. It serves as a **f
 ## **Features**  
 ✔️ **Responsive design** – Works on all devices  
 ✔️ **Minimalist and clean layout**  
-✔️ **Sections for About, Projects, Skills, and Contact**  
-✔️ **Easy to customize** – No JavaScript required  
 
 ## **Technologies Used**  
 - **HTML5** – Structure of the webpage  
@@ -35,5 +33,5 @@ This project was developed as part of the **CPCS403** course. It serves as a **f
    ```bash
    git clone https://github.com/76ilq/CodeCrafters.git
 2.	**Navigate to the project folder:**
-  ```bash
+   ```bash
    cd CodeCrafters
