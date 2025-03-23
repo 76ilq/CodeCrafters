@@ -357,10 +357,11 @@ button:hover {
   }
   
   .logo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 50px;        
+    height: 50px;      
+    object-fit: cover;   
+    border-radius: 50%;  
+    
     border: 4px solid #ff9f43;
   }
   
@@ -438,18 +439,7 @@ button:hover {
     font-size: 1rem;
     color: #ff9f43;
   }
-/* Logo Container (optional, if you want to control the space around it) */
-.logo-container {
-    width: 50px; /* adjust as needed */
-}
 
-/* Logo Image */
-.logo {
-    width: 50px;        
-    height: 50px;      
-    object-fit: cover;   
-    border-radius: 50%;  
-}
 
 /* Logo Container (optional, if you want to control the space around it) */
 .logo-container2 {
@@ -458,6 +448,9 @@ button:hover {
 
 /* Logo Image */
 .logo2 {
-    width: 90%;   /* makes it responsive to the container */
-    height: auto;  /* keeps aspect ratio */
+    width: 150px;        
+    height: 150px;      
+    object-fit: cover;   
+    border-radius:90%; 
+    border: 4px solid #ff9f43;
 }
