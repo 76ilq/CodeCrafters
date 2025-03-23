@@ -370,13 +370,21 @@ button:hover {
   }
   
   
-  
-  .service-btn {
-    background-color: #ff9f43;
-    color: #fff;
-  }
-  
-  
+.service-btn {
+    background-color: #ff9f43; /* Orange background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.service-btn:hover {
+    background-color: #e68a2e; /* Slightly darker orange on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
   .stats {
     display: flex;
     gap: 2rem; /* Adjust spacing between stats */
