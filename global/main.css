@@ -12,23 +12,6 @@ header {
     background-color: #1a1a1a;
     padding: 15px 0;
 }
-footer {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    text-align: center;
-    padding: 8px 0;
-    font-size: 14px;
-}
-
-footer a {
-    color: #ff8c00; /* Orange links for visibility */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #ffffff; /* White on hover */
-}
 
 /* Navigation Bar Styling */
 nav {
@@ -71,6 +54,23 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ff8c00; /* Change link color on hover */
+}
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ff8c00; /* Orange links for visibility */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff; /* White on hover */
 }
 /*Main page section*/
 /* Hero Section */
