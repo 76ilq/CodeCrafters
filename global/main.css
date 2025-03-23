@@ -201,7 +201,16 @@ tbody td:hover {
     transition: background-color 0.3s ease;
 }
 
+/* email color*/
+.contact a {
+    color: orange;
+    text-decoration: none; 
+}
 
+.contact a:hover,
+.contact a:focus {
+    color: white;
+}
 
 
 /*---------------------------------------------------------------------------------------------------------------------
