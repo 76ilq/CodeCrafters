@@ -27,8 +27,12 @@ nav {
 }
 
 .logo {
-    height: 30px; /* Reduced height for a smaller logo */
-    width: auto; /* Maintain aspect ratio */
+    height: 10px; /* Reduced height for a smaller logo */
+    width: 10px; /* Adjust size of the logo */
+    height: 150px;
+    object-fit: cover; /* Ensure the logo maintains its aspect ratio */
+    border-radius: 50%; /* Make the logo circular */
+    border: 2px solid #ff9f43; /* Orange border around the logo */
 }
 
 nav ul {
