@@ -302,6 +302,7 @@ button:hover {
 
 /* Hero Section Styling */
 /* Hero Section */
+/* Hero Section */
 #hero {
     padding: 100px 20px; /* Add vertical padding for spacing */
     background-color: #1e1e1e; /* Dark background for hero section */
@@ -322,7 +323,23 @@ button:hover {
     color: #bbbbbb; /* Light gray text for paragraph */
     margin-bottom: 30px;
 }
-  
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+    #hero {
+        padding: 50px 20px; /* Reduce padding on smaller screens */
+    }
+
+    #hero h1 {
+        font-size: 30px; /* Slightly smaller heading on smaller screens */
+    }
+
+    #hero p {
+        font-size: 16px; /* Slightly smaller paragraph text on smaller screens */
+    }
+}
+
+
   
   .logo-container {
     display: flex;
