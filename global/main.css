@@ -291,6 +291,7 @@ input[type="radio"] {
 /*---------------------------------------------------------------------------------------------------------------------
 /* Home page */
 /* Hero Section */
+/* Hero Section */
 #hero {
     padding: 100px 20px; /* Add vertical padding for spacing */
     background-color: #1e1e1e; /* Dark background for hero section */
@@ -298,120 +299,117 @@ input[type="radio"] {
     box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3); /* Subtle orange glow */
     max-width: 700px; /* Limit width for better readability */
     margin: 40px auto; /* Center the section horizontally */
+    text-align: center; /* Center all content inside the hero section */
 }
-  
-  .logo-container {
+
+.logo-container2 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .logo {
-    width: 50px;        
-    height: 50px;      
-    object-fit: cover;   
-    border-radius: 50%;  
-    
-    border: 4px solid #ff9f43;
-  }
-  
-  .tagline {
+    justify-content: center; /* Center the logo horizontally */
+    margin-bottom: 20px; /* Add spacing below the logo */
+}
+
+.logo2 {
+    width: 150px; /* Adjust size of the logo */
+    height: 150px;
+    object-fit: cover; /* Ensure the logo maintains its aspect ratio */
+    border-radius: 50%; /* Make the logo circular */
+    border: 4px solid #ff9f43; /* Orange border around the logo */
+}
+
+.tagline {
     font-size: 3rem;
     font-weight: bold;
-    color: #ff9f43;
-  }
-  
-  .highlight {
-    color: #fff;
-  }
-  
-  .description {
+    color: #ff9f43; /* Orange text for the tagline */
+    margin-bottom: 10px; /* Add spacing below the tagline */
+}
+
+.highlight {
+    color: #fff; /* White text for the highlighted part */
+}
+
+.description {
     font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem; /* Adjust spacing after description */
-  }
-  
- 
-  .stats {
+    color: #bbbbbb; /* Light gray text for the description */
+    margin-bottom: 30px; /* Add spacing below the description */
+}
+
+.buttons {
+    margin-bottom: 40px; /* Add spacing below the button */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9f43; /* Orange background for the button */
+    color: #fff; /* White text for the button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #e68a2e; /* Slightly darker orange on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.stats {
     display: flex;
     gap: 2rem; /* Adjust spacing between stats */
-    margin-bottom: 2rem; /* Adjust spacing after stats */
     justify-content: center; /* Center stats horizontally */
-  }
-  
-  .stat {
+    margin-bottom: 40px; /* Add spacing below the stats */
+}
+
+.stat {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .number {
+    text-align: center;
+}
+
+.number {
     font-size: 2rem;
     font-weight: bold;
-    color: #ff9f43;
-  }
-  
-  .label {
+    color: #ff9f43; /* Orange text for numbers */
+}
+
+.label {
     font-size: 1rem;
-    color: #fff;
-  }
-  
-  .team-section {
+    color: #fff; /* White text for labels */
+}
+
+.team-section {
     text-align: center;
-    margin-top: 2rem; /* Adjust spacing before team section */
-  }
-  
-  .team-members {
+    margin-top: 40px; /* Add spacing before the team section */
+}
+
+.team-members {
     display: flex;
     justify-content: center; /* Center team members horizontally */
     gap: 2rem; /* Adjust spacing between team members */
-    flex-wrap: wrap;
-  }
-  
-  .member {
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.member {
     text-align: center;
-  }
-  
-  .member-image {
+}
+
+.member-image {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #ff9f43;
-  }
-  
-  .member h3 {
+    border-radius: 50%; /* Circular images for team members */
+    object-fit: cover; /* Ensure images maintain their aspect ratio */
+    border: 4px solid #ff9f43; /* Orange border around team member images */
+    margin-bottom: 10px; /* Add spacing below the image */
+}
+
+.member h3 {
     font-size: 1.2rem;
     margin-top: 0.5rem;
-  }
-  
-  .member p {
+    color: #fff; /* White text for names */
+}
+
+.member p {
     font-size: 1rem;
-    color: #ff9f43;
-  }
-
-
-/* Logo Container (optional, if you want to control the space around it) */
-.logo-container2 {
-    width:150px; /* adjust as needed */
-}
-
-/* Logo Image */
-.logo2 {
-    width: 150px;        
-    height: 150px;      
-    object-fit: cover;   
-    border-radius:90%; 
-    border: 4px solid #ff9f43;
-}
-/* email color*/
-.contact a {
-    color: orange;
-    text-decoration: none; 
-}
-
-.contact a:hover,
-.contact a:focus {
-    color: white;
+    color: #ff9f43; /* Orange text for roles */
 }
