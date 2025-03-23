@@ -27,8 +27,8 @@ nav {
 }
 
 .logo {
-    height: 15px; /* Reduced height for a smaller logo */
-    width: 15px; /* Adjust size of the logo */
+    height: 25px; /* Reduced height for a smaller logo */
+    width: 25px; /* Adjust size of the logo */
     object-fit: cover; /* Ensure the logo maintains its aspect ratio */
     border-radius: 50%; /* Make the logo circular */
     border: 1px solid #ff9f43; /* Orange border around the logo */
