@@ -438,3 +438,24 @@ button:hover {
     font-size: 1rem;
     color: #ff9f43;
   }
+/* Logo Container (optional, if you want to control the space around it) */
+.logo-container {
+    width: 50px; /* adjust as needed */
+}
+
+/* Logo Image */
+.logo {
+    width: 90%;   /* makes it responsive to the container */
+    height: auto;  /* keeps aspect ratio */
+}
+
+/* Logo Container (optional, if you want to control the space around it) */
+.logo-container2 {
+    width:150px; /* adjust as needed */
+}
+
+/* Logo Image */
+.logo2 {
+    width: 90%;   /* makes it responsive to the container */
+    height: auto;  /* keeps aspect ratio */
+}
