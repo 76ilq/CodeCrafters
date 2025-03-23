@@ -46,10 +46,8 @@
   <!-- Buttons Section -->
 <div class="buttons">
   <!-- Let's Connect Button -->
-  <a href="pages/feedback.html" class="connect-btn">Let's Connect</a>
+  <a href="pages/services.html" class="connect-btn">Our services</a>
 
-  <!-- Share Button -->
-  <button class="download-cv-btn" onclick="shareWebsite()">Share</button>
 </div>
 
   <!-- Stats Section -->
@@ -109,22 +107,7 @@
         </div>
     </footer>
 
-    <script>
-      // Function to share the website link
-      function shareWebsite() {
-        // Check if the Web Share API is supported
-        if (navigator.share) {
-          navigator.share({
-            title: 'Check out this website!',
-            url: window.location.href, // Get the current page URL
-          })
-          .then(() => console.log('Sharing successful'))
-          .catch((error) => console.error('Error sharing:', error));
-        } else {
-          alert('Sharing is not supported in your browser.');
-        }
-      }
-    </script>
+   
 
 </body>
 
