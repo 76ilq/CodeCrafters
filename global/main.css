@@ -44,7 +44,7 @@ nav {
 }
 
 .logo {
-    height: 10px; /* Set the height of the logo */
+    height: 30px; /* Reduced height for a smaller logo */
     width: auto; /* Maintain aspect ratio */
 }
 
