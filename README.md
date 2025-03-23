@@ -13,7 +13,6 @@ You can view the hosted version of this project here:
 - Features  
 - Technologies Used  
 - How to Use  
-- License
 
 ## **About the Project**
 This project was developed as part of the **CPCS403** course. It serves as a **fully responsive portfolio webpage template**, allowing users to present their professional details in a structured and visually appealing way.
