@@ -30,13 +30,32 @@ footer a:hover {
     color: #ffffff; /* White on hover */
 }
 
+/* Navigation Bar Styling */
+nav {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    padding: 0 20px; /* Add horizontal padding for spacing */
+    background-color: #1a1a1a; /* Background color for the navigation bar */
+}
+
+.logo-container {
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+    margin-right: 20px; /* Add spacing between the logo and the links */
+}
+
+.logo {
+    height: 50px; /* Set the height of the logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: flex; /* Align navigation links horizontally */
+    gap: 20px; /* Add spacing between links */
+    justify-content: center; /* Center the navigation links */
+    flex-grow: 1; /* Allow the links to take up the remaining space */
 }
 
 nav ul li {
@@ -47,11 +66,11 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
-    transition: 0.3s;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff8c00;
+    color: #ff8c00; /* Change link color on hover */
 }
 /*Main page section*/
 /* Hero Section */
