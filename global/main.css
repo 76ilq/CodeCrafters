@@ -333,26 +333,6 @@ input[type="radio"] {
     margin-bottom: 30px; /* Add spacing below the description */
 }
 
-.buttons {
-    margin-bottom: 40px; /* Add spacing below the button */
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff9f43; /* Orange background for the button */
-    color: #fff; /* White text for the button */
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.button:hover {
-    background-color: #e68a2e; /* Slightly darker orange on hover */
-    transform: scale(1.05); /* Slight scaling effect on hover */
-}
-
 .stats {
     display: flex;
     gap: 2rem; /* Adjust spacing between stats */
