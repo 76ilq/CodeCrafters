@@ -1,329 +1,342 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    font-family: Arial, sans-serif; /* Clean and modern font for readability */
+    background-color: #121212; /* Dark background for a sleek look */
+    color: #ffffff; /* White text for contrast */
+    margin: 0; /* Remove default margins for a clean layout */
+    padding: 0; /* Remove default padding for consistent spacing */
+    text-align: center; /* Center-align text globally */
 }
 
 header {
-    background-color: #1a1a1a;
-    padding: 15px 0;
+    background-color: #1a1a1a; /* Slightly lighter shade for the header */
+    padding: 15px 0; /* Add vertical padding for spacing */
 }
 
 /* Navigation Bar Styling */
 nav {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Vertically center items */
+    display: flex; /* Use flexbox for a flexible layout */
+    align-items: center; /* Vertically center navigation items */
     padding: 0 20px; /* Add horizontal padding for spacing */
-    background-color: #1a1a1a; /* Background color for the navigation bar */
+    background-color: #1a1a1a; /* Match header background for consistency */
 }
 
 .logo-container {
-    flex-shrink: 0; /* Prevent the logo from shrinking */
-    margin-right: 20px; /* Add spacing between the logo and the links */
+    flex-shrink: 0; /* Prevent logo from shrinking */
+    margin-right: 20px; /* Add spacing between logo and links */
 }
 
 .logo {
-    height: 35px; /* Reduced height for a smaller logo */
-    width: 35px; /* Adjust size of the logo */
-    object-fit: cover; /* Ensure the logo maintains its aspect ratio */
-    border-radius: 50%; /* Make the logo circular */
-    border: 1px solid #ff9f43; /* Orange border around the logo */
+    height: 25px; /* Small logo size for better fit */
+    width: 25px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure proper scaling without distortion */
+    border-radius: 50%; /* Circular logo for a modern appearance */
+    border: 1px solid #ff9f43; /* Highlight logo with an orange border */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Align navigation links horizontally */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Align links horizontally */
     gap: 20px; /* Add spacing between links */
-    justify-content: center; /* Center the navigation links */
-    flex-grow: 1; /* Allow the links to take up the remaining space */
+    justify-content: center; /* Center-align navigation links */
+    flex-grow: 1; /* Allow links to occupy available space */
 }
 
 nav ul li {
-    display: inline;
+    display: inline; /* Display list items inline */
 }
 
 nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    color: #ffffff; /* White text for visibility */
+    text-decoration: none; /* Remove underlines for a clean look */
+    font-size: 16px; /* Readable font size */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 nav ul li a:hover {
-    color: #ff8c00; /* Change link color on hover */
+    color: #ff8c00; /* Change link color to orange on hover */
 }
+
 footer {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    text-align: center;
-    padding: 8px 0;
-    font-size: 14px;
+    background-color: #1a1a1a; /* Match header background */
+    color: #ffffff; /* White text for visibility */
+    text-align: center; /* Center-align footer content */
+    padding: 8px 0; /* Add vertical padding for spacing */
+    font-size: 14px; /* Smaller font size for secondary info */
 }
 
 footer a {
-    color: #ff8c00; /* Orange links for visibility */
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #ff8c00; /* Orange links for emphasis */
+    text-decoration: none; /* Remove underlines for a clean look */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 footer a:hover {
-    color: #ffffff; /* White on hover */
+    color: #ffffff; /* Change link color to white on hover */
 }
-
 /*--------------------------------------------------------------------------------------------------------------------*/
 /* Services page */
 #services {
-    padding: 40px 20px;
+    padding: 40px 20px; /* Add consistent padding for spacing around the section */
 }
 
 #services h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 36px; /* Large font size for the main heading */
+    margin-bottom: 10px; /* Add spacing below the heading */
 }
 
 #services p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #bbbbbb;
+    font-size: 18px; /* Medium font size for the description */
+    margin-bottom: 30px; /* Add spacing below the description */
+    color: #bbbbbb; /* Light gray text for secondary information */
 }
 
-/* Cards Grid */
+/* Cards Grid Layout */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    display: grid; /* Use a grid layout for arranging service cards */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid with flexible columns */
+    gap: 20px; /* Add spacing between cards */
+    max-width: 1000px; /* Limit the maximum width for better readability */
+    margin: 0 auto; /* Center the grid horizontally */
+    margin-bottom: 30px; /* Add spacing below the grid */
 }
 
-/* Individual Card */
+/* Individual Service Card */
 .card {
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1e1e1e; /* Dark background for the card */
+    padding: 20px; /* Add internal padding for spacing */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3); /* Subtle orange glow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
 }
 
 .card h2 {
-    color: #ff8c00;
-    font-size: 20px;
-    margin-bottom: 10px;
+    color: #ff8c00; /* Orange text for the card title */
+    font-size: 20px; /* Medium font size for the title */
+    margin-bottom: 10px; /* Add spacing below the title */
 }
 
 .card p {
-    font-size: 16px;
-    color: #cccccc;
+    font-size: 16px; /* Smaller font size for the description */
+    color: #cccccc; /* Light gray text for secondary information */
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(255, 140, 0, 0.5);
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+    box-shadow: 0 6px 15px rgba(255, 140, 0, 0.5); /* Enhance the shadow effect on hover */
 }
 
-/* Responsive Design */
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column; /* Stack navigation links vertically on smaller screens */
+        gap: 10px; /* Add spacing between stacked links */
     }
-    
+
     .cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Switch to a single-column layout on smaller screens */
     }
 }
+
+/* Button Styling */
 .button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #ff8c00;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Ensure buttons are treated as block elements */
+    margin-top: 10px; /* Add spacing above the button */
+    padding: 10px 15px; /* Add internal padding for spacing */
+    background-color: #ff8c00; /* Orange background for emphasis */
+    color: #ffffff; /* White text for visibility */
+    text-decoration: none; /* Remove underlines for a clean look */
+    border-radius: 5px; /* Rounded corners for a modern appearance */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
 }
 
 .button:hover {
-    background-color: #e07b00;
-    transform: scale(1.05);
+    background-color: #e07b00; /* Darker orange on hover for interactivity */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
+
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*Schedule page*/
 #schedule {
-    text-align: center;
-    padding: 40px 20px; /* Consistent padding with other sections */
-    background-color: #1e1e1e; /* Dark background */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3); /* Subtle orange glow */
-    max-width: 800px; /* Limit width for better readability */
+    text-align: center; /* Center-align all content within the section */
+    padding: 40px 20px; /* Consistent padding for spacing around the section */
+    background-color: #1e1e1e; /* Dark background for a sleek appearance */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3); /* Subtle orange glow for depth */
+    max-width: 800px; /* Limit the maximum width for better readability */
     margin: 40px auto; /* Center the section horizontally */
 }
 
+/* Table Styling */
 table {
-    width: 100%; /* Full width within the container */
-    border-collapse: collapse;
+    width: 100%; /* Ensure the table spans the full width of its container */
+    border-collapse: collapse; /* Remove gaps between table borders */
     margin: 20px auto; /* Add spacing above and below the table */
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px; /* Rounded corners for a polished look */
     overflow: hidden; /* Ensure rounded corners are visible */
 }
 
+/* Table Header Styling */
 th {
     background-color: #ff8c00; /* Orange background for headers */
     color: #1e1e1e; /* Dark text for contrast */
-    font-size: 18px; /* Slightly smaller font size */
-    font-weight: bold;
-    padding: 10px; /* Consistent padding */
-    text-align: center;
-    border: 1px solid #ff8c00; /* Orange border */
+    font-size: 18px; /* Medium font size for headers */
+    font-weight: bold; /* Bold text for emphasis */
+    padding: 10px; /* Add internal padding for spacing */
+    text-align: center; /* Center-align header text */
+    border: 1px solid #ff8c00; /* Orange border for consistency */
 }
 
+/* Table Data Cell Styling */
 td {
-    background-color: #222; /* Dark background for cells */
+    background-color: #222; /* Dark background for table cells */
     color: #ffffff; /* White text for visibility */
     font-size: 16px; /* Smaller font size for data */
-    padding: 10px; /* Consistent padding */
-    text-align: center;
-    border: 1px solid #ff8c00; /* Orange border */
+    padding: 10px; /* Add internal padding for spacing */
+    text-align: center; /* Center-align cell text */
+    border: 1px solid #ff8c00; /* Orange border for consistency */
+    transition: background-color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Highlight Rows on Hover */
+tbody td:hover {
+    background-color: #ff8c00; /* Change cell background to orange on hover */
+    color: #1e1e1e; /* Dark text for contrast */
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-tbody td:hover {
-    background-color: #ff8c00; /* Highlight row on hover */
-    color: #1e1e1e; /* Dark text for contrast */
-    transition: background-color 0.3s ease;
-}
-
-/* email color*/
+/* Email Link Styling */
 .contact a {
-    color: orange;
-    text-decoration: none; 
+    color: orange; /* Orange text for email links */
+    text-decoration: none; /* Remove underlines for a clean look */
 }
 
 .contact a:hover,
 .contact a:focus {
-    color: white;
+    color: white; /* Change text color to white on hover or focus */
 }
 
 
 /*---------------------------------------------------------------------------------------------------------------------
 /* Feedback Page */
 #feedback {
-    padding: 40px 20px;
-    max-width: 700px;
-    margin: 40px auto;
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
+    padding: 40px 20px; /* Add consistent padding for spacing around the section */
+    max-width: 700px; /* Limit the maximum width for better readability */
+    margin: 40px auto; /* Center the section horizontally */
+    background-color: #1e1e1e; /* Dark background for a sleek appearance */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3); /* Subtle orange glow for depth */
 }
 
 #feedback h1 {
-    font-size: 28px;
-    color: #ff8c00;
-    margin-bottom: 15px;
+    font-size: 28px; /* Large font size for the main heading */
+    color: #ff8c00; /* Orange text for emphasis */
+    margin-bottom: 15px; /* Add spacing below the heading */
 }
 
+/* Form Layout */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange form elements vertically */
+    gap: 15px; /* Add consistent spacing between form elements */
 }
 
+/* Label Styling */
 label {
-    font-size: 18px;
-    color: #ff8c00; /* Default label color */
-    text-align: left;
-    margin-bottom: 5px;
+    font-size: 18px; /* Medium font size for labels */
+    color: #ff8c00; /* Orange text for visibility */
+    text-align: left; /* Align label text to the left */
+    margin-bottom: 5px; /* Add spacing below labels */
 }
 
-/* Style for checkbox and radio button labels */
+/* Checkbox and Radio Button Labels */
 .checkbox-group label,
 .radio-group label {
-    color: #ffffff; /* White font for service names and rating options */
-    font-size: 16px; /* Slightly smaller font size for readability */
+    color: #ffffff; /* White text for visibility */
+    font-size: 16px; /* Smaller font size for readability */
 }
 
+/* Input Fields, Select, and Textarea Styling */
 input[type="text"],
 input[type="email"],
 select,
 textarea {
-    padding: 10px;
-    background-color: #222;
-    border: 1px solid #ff8c00;
-    border-radius: 5px;
-    color: #ffffff;
-    font-size: 16px;
+    padding: 10px; /* Add internal padding for spacing */
+    background-color: #222; /* Dark background for input fields */
+    border: 1px solid #ff8c00; /* Orange border for consistency */
+    border-radius: 5px; /* Rounded corners for a modern appearance */
+    color: #ffffff; /* White text for visibility */
+    font-size: 16px; /* Readable font size */
 }
 
+/* Textarea Specific Styling */
 textarea {
-    resize: vertical;
-    min-height: 100px;
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Set a minimum height for the textarea */
 }
 
+/* Checkbox and Radio Button Spacing */
 input[type="checkbox"],
 input[type="radio"] {
-    margin-right: 10px;
+    margin-right: 10px; /* Add spacing between checkboxes/radio buttons and labels */
 }
 
-/* Arrange services checkboxes into two columns */
+/* Arrange Checkboxes in Two Columns */
 .checkbox-group {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 15px; /* Space between rows and columns */
+    display: grid; /* Use a grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create two columns */
+    gap: 15px; /* Add spacing between rows and columns */
 }
 
 .checkbox-group label {
-    display: flex;
-    align-items: center; /* Align checkbox and label text */
-    gap: 10px; /* Space between checkbox and label */
+    display: flex; /* Align checkbox and label text horizontally */
+    align-items: center; /* Vertically center checkbox and label */
+    gap: 10px; /* Add spacing between checkbox and label */
 }
 
-/* Arrange radio buttons in a horizontal line */
+/* Arrange Radio Buttons in a Horizontal Line */
 .radio-group {
-    display: flex;
+    display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center radio buttons horizontally */
-    gap: 15px; /* Space between radio buttons */
+    gap: 15px; /* Add spacing between radio buttons */
     align-items: center; /* Ensure vertical alignment */
 }
 
 .radio-group input[type="radio"] {
-    accent-color: #ff8c00; /* Custom color for radio buttons */
-    width: 20px;
-    height: 20px;
+    accent-color: #ff8c00; /* Custom orange color for radio buttons */
+    width: 20px; /* Larger size for better visibility */
+    height: 20px; /* Maintain aspect ratio */
 }
+
+/* Button Styling */
 button {
-    padding: 12px 20px;
-    background-color: #ff8c00;
-    border: none;
-    color: #1e1e1e;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 12px 20px; /* Add internal padding for spacing */
+    background-color: #ff8c00; /* Orange background for emphasis */
+    border: none; /* Remove default border */
+    color: #1e1e1e; /* Dark text for contrast */
+    font-size: 18px; /* Large font size for readability */
+    font-weight: bold; /* Bold text for emphasis */
+    border-radius: 5px; /* Rounded corners for a modern appearance */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
 }
 
 button:hover {
-    background-color: #e07b00;
-    transform: scale(1.05);
+    background-color: #e07b00; /* Darker orange on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
 
 /*---------------------------------------------------------------------------------------------------------------------
 /* Home page */
-/* Hero Section */
-/* Hero Section */
 #hero {
     padding: 100px 20px; /* Add vertical padding for spacing */
-    background-color: #1e1e1e; /* Dark background for hero section */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3); /* Subtle orange glow */
+    background-color: #1e1e1e; /* Dark background for a sleek appearance */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3); /* Subtle orange glow for depth */
     max-width: 700px; /* Limit width for better readability */
     margin: 40px auto; /* Center the section horizontally */
     text-align: center; /* Center all content inside the hero section */
@@ -344,79 +357,80 @@ button:hover {
 }
 
 .tagline {
-    font-size: 3rem;
+    font-size: 3rem; /* Large font size for emphasis */
     font-weight: bold;
-    color: #ff9f43; /* Orange text for the tagline */
+    color: #ff9f43; /* Orange text for visibility */
     margin-bottom: 10px; /* Add spacing below the tagline */
 }
 
 .highlight {
-    color: #fff; /* White text for the highlighted part */
+    color: #fff; /* White text for contrast */
 }
 
 .description {
-    font-size: 1.2rem;
-    color: #bbbbbb; /* Light gray text for the description */
+    font-size: 1.2rem; /* Medium font size for readability */
+    color: #bbbbbb; /* Light gray text for secondary information */
     margin-bottom: 30px; /* Add spacing below the description */
 }
 
 .stats {
-    display: flex;
-    gap: 2rem; /* Adjust spacing between stats */
+    display: flex; /* Use flexbox for layout */
+    gap: 2rem; /* Add spacing between stats */
     justify-content: center; /* Center stats horizontally */
     margin-bottom: 40px; /* Add spacing below the stats */
 }
 
 .stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange stats vertically */
+    align-items: center; /* Center-align stat content */
+    text-align: center; /* Center-align text */
 }
 
 .number {
-    font-size: 2rem;
+    font-size: 2rem; /* Large font size for emphasis */
     font-weight: bold;
-    color: #ff9f43; /* Orange text for numbers */
+    color: #ff9f43; /* Orange text for visibility */
 }
 
 .label {
-    font-size: 1rem;
-    color: #fff; /* White text for labels */
+    font-size: 1rem; /* Smaller font size for labels */
+    color: #fff; /* White text for contrast */
 }
 
+/* Team Section */
 .team-section {
-    text-align: center;
+    text-align: center; /* Center-align all content in the team section */
     margin-top: 40px; /* Add spacing before the team section */
 }
 
 .team-members {
-    display: flex;
+    display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center team members horizontally */
-    gap: 2rem; /* Adjust spacing between team members */
+    gap: 2rem; /* Add spacing between team members */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .member {
-    text-align: center;
+    text-align: center; /* Center-align individual member content */
 }
 
 .member-image {
-    width: 100px;
+    width: 100px; /* Set consistent image size */
     height: 100px;
-    border-radius: 50%; /* Circular images for team members */
+    border-radius: 50%; /* Circular images for a modern look */
     object-fit: cover; /* Ensure images maintain their aspect ratio */
-    border: 4px solid #ff9f43; /* Orange border around team member images */
+    border: 4px solid #ff9f43; /* Orange border for emphasis */
     margin-bottom: 10px; /* Add spacing below the image */
 }
 
 .member h3 {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    color: #fff; /* White text for names */
+    font-size: 1.2rem; /* Medium font size for names */
+    margin-top: 0.5rem; /* Add spacing above the name */
+    color: #fff; /* White text for visibility */
 }
 
 .member p {
-    font-size: 1rem;
-    color: #ff9f43; /* Orange text for roles */
+    font-size: 1rem; /* Smaller font size for roles */
+    color: #ff9f43; /* Orange text for emphasis */
 }
