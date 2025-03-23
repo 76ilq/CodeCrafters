@@ -22,7 +22,6 @@ This project was developed as part of the **CPCS403** course. It serves as a **f
 - ✅ Responsive design – works on all devices  
 - ✅ Minimalist and clean layout  
 - ✅ Easy to edit – simple HTML and CSS files  
-- ✅ Sectioned layout – About, Projects, Skills, and Contact sections
 
 ## **Technologies Used**
 - HTML5 – for the structure of the webpage  
