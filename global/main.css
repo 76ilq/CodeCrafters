@@ -369,7 +369,7 @@ button:hover {
     justify-content: center; /* Center buttons horizontally */
   }
   
-  .connect-btn, .download-cv-btn {
+  .service-btn, .download-cv-btn {
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
