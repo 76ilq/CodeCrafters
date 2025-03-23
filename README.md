@@ -37,7 +37,3 @@ This project was developed as part of the **CPCS403** course. It serves as a **f
 
 3. Open the `index.html` file in your browser.  
    You can double-click the file or right-click and select "Open with" → your browser.
-
-
-## **License**
-This project is open-source and available under the **MIT License**.
